@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:id="@+id/start_all"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+            <ImageView
+                android:src="@mipmap/download"
+                android:layout_width="30dip"
+                android:layout_height="30dip" />
+            <TextView
+                android:layout_gravity="center_vertical"
+                android:text="全部开始"
+                android:textSize="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/stop_all"
+            android:paddingLeft="30dp"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+            <ImageView
+                android:src="@mipmap/download"
+                android:layout_width="30dip"
+                android:layout_height="30dip" />
+            <TextView
+                android:layout_gravity="center_vertical"
+                android:text="全部开始"
+                android:textSize="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ListView
+        android:layout_marginTop="10dp"
+        android:id="@+id/downlaoding_listview"
+        android:layout_width="match_parent"
+        android:dividerHeight="10dp"
+        android:divider="@null"
+        android:scrollbars="none"
+        android:layout_height="match_parent">
+
+    </ListView>
+
+</LinearLayout>

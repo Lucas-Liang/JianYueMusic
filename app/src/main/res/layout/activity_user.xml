@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/user_bg"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context="exmple.com.jianyuemusic.UI.UserActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="70dip"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:src="@mipmap/logo_white" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/name_simple"
+        android:textColor="@android:color/white"
+        android:textSize="26dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="800px"
+        android:layout_marginLeft="50px"
+        android:layout_marginRight="50px"
+        android:orientation="vertical">
+
+        <com.androidkun.xtablayout.XTabLayout
+            android:id="@+id/xTablayout"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            app:xTabIndicatorColor="@android:color/white"
+            app:xTabIndicatorHeight="3dp"
+            app:xTabIndicatorWidth="30dp"
+            app:xTabSelectedTextColor="@android:color/white"
+            app:xTabTextColor="@android:color/white"
+            app:xTabTextSize="15sp"
+            app:xTabMinWidth="400dp"
+            app:xTabSelectedTextSize="20sp"/>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/User_Viewpage"
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/user_viewpage"
+            >
+
+        </android.support.v4.view.ViewPager>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/User_sign"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="用户注册协议" />
+    </LinearLayout>
+
+
+</LinearLayout>

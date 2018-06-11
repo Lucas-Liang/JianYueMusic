@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="exmple.com.jianyuemusic.UI.DownloadActivity">
+    <include layout="@layout/titlelayout"></include>
+
+    <com.androidkun.xtablayout.XTabLayout
+        android:id="@+id/download_tabyout_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        app:xTabIndicatorColor="@color/main_2"
+        app:xTabIndicatorHeight="3dp"
+        app:xTabIndicatorWidth="30dp"
+        app:xTabTextSize="15sp"
+        app:xTabSelectedTextSize="20sp"
+        app:xTabMode="scrollable">
+
+    </com.androidkun.xtablayout.XTabLayout>
+    <android.support.v4.view.ViewPager
+        android:id="@+id/download_viewpage"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </android.support.v4.view.ViewPager>
+</LinearLayout>

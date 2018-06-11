@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">JianYueMusic</string>
+    <string name="name_simple">简悦</string>
+    <string name="Register">注 册</string>
+    <string name="Login">登 录</string>
+    <string name="seare">搜索</string>
+    <string name="DownloadText">下载管理</string>
+    <string name="StartDownload">开始下载</string>
+    <string name="StopDownload">停止下载</string>
+    <string name="DeteleDownload">删除下载</string>
 </resources>
